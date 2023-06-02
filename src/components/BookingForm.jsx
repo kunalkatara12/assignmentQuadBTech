@@ -9,14 +9,12 @@ function BookingForm() {
   });
   const [show, setShow] = useState({});
   const { showId } = useParams();
-  // console.log(showId);
   useEffect(() => {
     fetch(`https://api.tvmaze.com/shows/${showId}`)
       .then((response) => response.json())
       .then((data) => setShow(data))
       .catch((error) => console.log(error));
   }, [showId]);
-  // console.log(show);
 
   const handleInputChange = (event) => {
     setFormData({ ...formData, [event.target.name]: event.target.value });
@@ -24,7 +22,6 @@ function BookingForm() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    console.log(formData);
     if (formData.email && formData.name) {
       const showId = show.id;
       localStorage.setItem(

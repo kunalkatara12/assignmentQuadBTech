@@ -1,9 +1,6 @@
 import React from 'react'
 import { Link } from "react-router-dom";
 function ShowCard(props) {
-let n = props.name;
-n = n.replace(/\s+/g, '-');
-const url = `/show/${n}`;
   return (
     <div
       className="show_card"

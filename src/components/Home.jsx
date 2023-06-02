@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import ShowCard from "./ShowCard";
-import TextField from "@mui/material/TextField";
 function Home() {
   const [data, setData] = useState([]);
     const url = "https://api.tvmaze.com/search/shows?q=all";
@@ -27,7 +26,6 @@ function Home() {
           backgroundColor: "black",
         }}
       >
-        {/* <TextField id="outlined-basic" label="Search Show" variant="outlined" /> */}
         <ul
           className="showList"
           style={{

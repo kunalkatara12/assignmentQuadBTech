@@ -9,9 +9,6 @@ function App() {
         <Route path="/show/:id" element={<ShowDetail/>} />
         <Route path="/booking/:showId" element={<BookingForm />} />
     </Routes>
-  //   <div className="App">
-  //  <Home/>
-  //   </div>
   );
 }
 

@@ -81,8 +81,6 @@ function ShowDetail() {
               height:"90px",
               flexDirection: "column",
               justifyContent: "center",
-              // alignItems: "center",
-              // backgroundColor:"blue"
             }}
           >
             {" "}
